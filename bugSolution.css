@@ -1,0 +1,22 @@
+/* bugSolution.css */
+
+/* Correct usage of calc() with percentages and pixels */
+.element {
+  width: calc(50% - 20px);
+  /* Correct use of parenthesis to ensure correct order of operations */
+  height: calc((100vh - 100px) / 2);
+}
+
+/* Ensure variables are defined before usage */
+:root {
+  --my-width: 100px;
+}
+
+.another-element {
+  width: calc(var(--my-width) + 50px);
+}
+
+/* Use fallback values if variables are not defined */
+.fallback {
+  width: calc(var(--my-other-width, 200px) - 50px);
+}

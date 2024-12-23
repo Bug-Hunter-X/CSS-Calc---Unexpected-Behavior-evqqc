@@ -1,0 +1,2 @@
+# CSS Calc() Unexpected Behavior
+This repository demonstrates a common and less common error related to the CSS `calc()` function. The `bug.css` file shows examples of incorrect usage, leading to unexpected layout issues, while `bugSolution.css` provides corrected implementations.
